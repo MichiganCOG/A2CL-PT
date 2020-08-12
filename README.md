@@ -21,7 +21,7 @@ The main goal of temporal activity localization is to find the start and end tim
 ## Example
 ![](examples/LongJump.gif)
 
-Full example video clip is included in `examples` folder.
+Full example video clip is included in `examples` folder. You can reproduce the detection results by using `run_example.py`
 
 ## Code Usage
 First, clone this repository and download these pre-extracted I3D features of the THUMOS14 dataset: [feature\_train.npy](https://drive.google.com/uc?export=download&id=15qQIX7EJXmbtZr__U6msnBIzjzAH7ISc) and [feature\_val.npy](https://drive.google.com/uc?export=download&id=1YZcpmHdbiguxNNsZppIj456b3_7Y3a9W).
@@ -40,7 +40,7 @@ You can refer to the `main.py` file to play with the hyperparameters (margins, a
 - We performed all the experiments with Python 3.6 and PyTorch 1.3.1 on a single GPU (TITAN Xp).
 
 ## Citation
-```
+```bibtex
 @misc{min2020adversarial,
     title={Adversarial Background-Aware Loss for Weakly-supervised Temporal Activity Localization},
     author={Kyle Min and Jason J. Corso},

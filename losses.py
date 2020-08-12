@@ -1,3 +1,7 @@
+# Reference
+# https://github.com/jxgu1016/MNIST_center_loss_pytorch/blob/master/CenterLoss.py
+# https://github.com/KaiyangZhou/pytorch-center-loss/blob/master/center_loss.py
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

@@ -1,3 +1,6 @@
+# Reference
+# https://github.com/sujoyp/wtalc-pytorch/blob/master/classificationMAP.py
+
 import numpy as np
 
 def calc_AP(predictions, labels):

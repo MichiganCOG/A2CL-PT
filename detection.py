@@ -1,3 +1,7 @@
+# Reference
+# https://github.com/sujoyp/wtalc-pytorch/blob/master/detectionMAP.py
+# https://github.com/naraysa/3c-net/blob/master/detectionMAP.py
+
 import numpy as np
 
 def postprocess_filter(predictions, hyperparam_s, thresholding):
@@ -60,6 +64,22 @@ def postprocess_ambiguous(preds_cwise, set_ambiguous, vnames, feature_rate):
                         pd = range(int(preds[i][1]), int(preds[i][2]))
                         if len(set(gt).intersection(set(pd))) > 0:
                             ind[i] = 1
+            preds_cwise[cn] = np.array([preds[i, :] for i in range(num_preds) if ind[i] == 0])
+
+    return preds_cwise
+
+def postprocess_ambiguous_v(preds_cwise, set_ambiguous, v, feature_rate):
+    if set_ambiguous and v in set_ambiguous:
+        for cn in preds_cwise:
+            preds = preds_cwise[cn]
+            num_preds = len(preds)
+            ind = np.zeros(num_preds)
+            for i in range(num_preds):
+                for a in set_ambiguous[v]:
+                    gt = range(round(a[0]*feature_rate), round(a[1]*feature_rate))
+                    pd = range(int(preds[i][1]), int(preds[i][2]))
+                    if len(set(gt).intersection(set(pd))) > 0:
+                        ind[i] = 1
             preds_cwise[cn] = np.array([preds[i, :] for i in range(num_preds) if ind[i] == 0])
 
     return preds_cwise
