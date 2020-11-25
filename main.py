@@ -63,7 +63,7 @@ def main():
 
     model, dim_feature = load_model(val_loader.get_num_classes())
     if 'val' in args.mode:
-        list_assigned_param_name = load_and_assign_weights(model)
+        load_and_assign_weights(model)
     print_args(exp_name)
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.wd)
 

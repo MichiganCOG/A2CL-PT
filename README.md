@@ -1,6 +1,6 @@
 # A2CL-PT
 Adversarial Background-Aware Loss for Weakly-supervised Temporal Activity Localization (ECCV 2020)\
-[**paper**](http://arxiv.org/abs/2007.06643) |
+[**paper**](http://link-springer-com-443.webvpn.fjmu.edu.cn/chapter/10.1007%2F978-3-030-58568-6_17) |
 [**poster**](https://drive.google.com/file/d/1rLpQkQ3xz5ZndHoOz6IDJE5U4CUv_V7t/view?usp=sharing) | [**presentation**](https://youtu.be/_fwvtSpeplY)
 
 ## Overview
@@ -15,7 +15,7 @@ We argue that existing methods for weakly-supervised temporal activity localizat
 | [CleanNet](https://openaccess.thecvf.com/content_ICCV_2019/html/Liu_Weakly_Supervised_Temporal_Action_Localization_Through_Contrast_Based_Evaluation_Networks_ICCV_2019_paper.html) | - | - | 37.0 | 30.9 | 23.9 | 13.9 | 7.1 | - | - | - |
 | [MAAN](https://arxiv.org/abs/1905.08586) | 59.8 | 50.8 | 41.1 | 30.6 | 20.3 | 12.0 | 6.9 | 2.6 | 0.2 | 24.9 |
 | [BaS-Net](https://arxiv.org/abs/1911.09963) | 58.2 | 52.3 | 44.6 | 36.0 | 27.0 | 18.6 | 10.4 | 3.9 | 0.5 | 27.9 |
-| [**A2CL-PT (Ours)**](http://arxiv.org/abs/2007.06643) | **61.2** | **56.1** | **48.1** | **39.0** | **30.1** | **19.2** | **10.6** | **4.8** | **1.0** | **30.0** |
+| [**A2CL-PT (Ours)**](http://link-springer-com-443.webvpn.fjmu.edu.cn/chapter/10.1007%2F978-3-030-58568-6_17) | **61.2** | **56.1** | **48.1** | **39.0** | **30.1** | **19.2** | **10.6** | **4.8** | **1.0** | **30.0** |
 
 ## Weakly-supervised Temporal Activity Localization
 The main goal of temporal activity localization is to find the start and end times of activities from untrimmed videos. A weakly-supervised version has recently taken foot in the community: here, one assumes that only video-level groundtruth activity labels are available. These video-level activity annotations are easy to collect and already exist across many datasets, thus weakly-supervised methods can be applied to a broader range of situations.
@@ -43,12 +43,12 @@ You can refer to the `main.py` file to play with the hyperparameters (margins, a
 
 ## Citation
 ```bibtex
-@misc{min2020adversarial,
-    title={Adversarial Background-Aware Loss for Weakly-supervised Temporal Activity Localization},
-    author={Kyle Min and Jason J. Corso},
-    year={2020},
-    eprint={2007.06643},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@inproceedings{min2020adversarial,
+  title={Adversarial Background-Aware Loss for Weakly-supervised Temporal Activity Localization},
+  author={Min, Kyle and Corso, Jason J},
+  booktitle={European Conference on Computer Vision},
+  pages={283--299},
+  year={2020},
+  organization={Springer}
 }
 ```
