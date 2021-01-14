@@ -41,6 +41,8 @@ You can refer to the `main.py` file to play with the hyperparameters (margins, a
 ## Notes
 - We performed all the experiments with Python 3.6 and PyTorch 1.3.1 on a single GPU (TITAN Xp).
 
+- We also provide the pre-extracted features of ActivityNet-1.3 dataset: [link](https://drive.google.com/drive/folders/1W2t4UKUkV_9duAsAFWU0HHYWbav2CZXp?usp=sharing). As described in our paper, you also need to add a 1D grouped convolutional layer (k=13, p=12, d=2). Please refer to this [discussion](https://github.com/MichiganCOG/A2CL-PT/issues/4).
+
 ## Citation
 ```bibtex
 @inproceedings{min2020adversarial,
