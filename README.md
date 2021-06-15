@@ -1,6 +1,6 @@
 # A2CL-PT
 Adversarial Background-Aware Loss for Weakly-supervised Temporal Activity Localization (ECCV 2020)\
-[**paper**](https://link.springer.com/chapter/10.1007%2F978-3-030-58568-6_17) |
+[**paper**](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590273.pdf) |
 [**poster**](https://drive.google.com/file/d/1rLpQkQ3xz5ZndHoOz6IDJE5U4CUv_V7t/view?usp=sharing) | [**presentation**](https://youtu.be/_fwvtSpeplY)
 
 ## Overview
