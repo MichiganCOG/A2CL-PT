@@ -26,7 +26,7 @@ The main goal of temporal activity localization is to find the start and end tim
 Full example video clip is included in `examples` folder. You can reproduce the detection results by using `run_example.py`
 
 ## Code Usage
-First, clone this repository and download these pre-extracted I3D features of the THUMOS14 dataset: [feature\_train.npy](https://drive.google.com/uc?export=download&id=15qQIX7EJXmbtZr__U6msnBIzjzAH7ISc) and [feature\_val.npy](https://drive.google.com/uc?export=download&id=1YZcpmHdbiguxNNsZppIj456b3_7Y3a9W).
+First, clone this repository and download these pre-extracted I3D features of the THUMOS14 dataset: [feature\_train.npy](https://drive.google.com/file/d/1PDJtJch7cVgvX-fgyvwl1LN7w8HJUzjk/view?usp=sharing) and [feature\_val.npy](https://drive.google.com/file/d/1OoKwOa-qQAp7cu-UnKnXSjw5O8eTSMWG/view?usp=sharing).
 Then, put these files in the `dataset/THUMOS14` folder and just run
 
 `$ python main.py --mode val`
@@ -41,7 +41,7 @@ You can refer to the `main.py` file to play with the hyperparameters (margins, a
 ## Notes
 - We performed all the experiments with Python 3.6 and PyTorch 1.3.1 on a single GPU (TITAN Xp).
 
-- We also provide the pre-extracted features of ActivityNet-1.3 dataset: [link](https://drive.google.com/drive/folders/1W2t4UKUkV_9duAsAFWU0HHYWbav2CZXp?usp=sharing). As described in our paper, you also need to add a 1D grouped convolutional layer (k=13, p=12, d=2). Please refer to this [discussion](https://github.com/MichiganCOG/A2CL-PT/issues/4).
+- We also provide the pre-extracted features of ActivityNet-1.3 dataset: [link](https://drive.google.com/drive/folders/1LyypoyYNnJIuN6VYM6CeeCFHHf0gmL8O?usp=drive_link). As described in our paper, you also need to add a 1D grouped convolutional layer (k=13, p=12, d=2). Please refer to this [discussion](https://github.com/MichiganCOG/A2CL-PT/issues/4).
 
 ## Citation
 ```bibtex
